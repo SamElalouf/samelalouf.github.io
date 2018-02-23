@@ -1,2 +1,3 @@
 name: Sam Elalouf
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
