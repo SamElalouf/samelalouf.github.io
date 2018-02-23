@@ -4,22 +4,22 @@ layout: feed
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-	<title>Sam Elalouf's Blog</title>
-	<link href="http://SamElalouf.github.io/blog/atom.xml" rel="self"/>
-	<link href="http://SamElalouf.github.io/blog"/>
+	<title>Hank Quinlan's Blog</title>
+	<link href="http://samelalouf.github.io/blog/atom.xml" rel="self"/>
+	<link href="http://samelalouf.github.io/blog"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://SamElalouf.github.io/blog</id>
+	<id>http://samelalouf.github.io/blog</id>
 	<author>
-		<name>SamElalouf</name>
+		<name>Sam Elalouf</name>
 		<email>sam.elalouf@gmail.com</email>
 	</author>
 
 	{% for post in site.posts %}
 		<entry>
 			<title>{{ post.title }}</title>
-			<link href="http://SamElalouf.github.io{{ post.url }}"/>
+			<link href="http://samelalouf.github.io{{ post.url }}"/>
 			<updated>{{ post.date | date_to_xmlschema }}</updated>
-			<id>http://SamElalouf.github.io{{ post.id }}</id>
+			<id>http://samelalouf.github.io{{ post.id }}</id>
 			<content type="html">{{ post.content | xml_escape }}</content>
 		</entry>
 	{% endfor %}
